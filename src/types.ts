@@ -10,6 +10,11 @@ export interface ServiceItem {
   keyFeatures: string[];
   applications: string[];
   imageUrl: string;
+  diagramUrl?: string;
+  diagramTitle?: string;
+  diagramExplanation?: string;
+  schematicDetails?: { title: string; desc: string }[];
+  installationUrl?: string;
 }
 
 export interface PortfolioProject {

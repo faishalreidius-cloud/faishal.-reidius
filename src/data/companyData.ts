@@ -145,7 +145,7 @@ export const SERVICES: ServiceItem[] = [
       'We design, supply, install, and commission state-of-the-art addressable fire detection networks. Featuring intelligent multi-sensor smoke and heat detectors, loop-powered sounder-strobes, manual call points, and advanced control panels from Siemens Cerberus, Simplex, Zettler, and Fireclass. Built to ensure zero false alarms, pinpoint fire localization, and seamless integration with building HVAC and emergency elevators.',
     category: 'fire-detection',
     iconName: 'Flame',
-    brands: ['Siemens', 'Simplex (Johnson Controls)', 'Zettler', 'Fireclass', 'Asenware'],
+    brands: ['Siemens Cerberus PRO', 'Simplex (Johnson Controls)', 'Zettler', 'Fireclass', 'Asenware'],
     certifications: ['UL Listed', 'FM Approved', 'EN 54', 'VdS', 'ULC'],
     keyFeatures: [
       'In-built loop isolator technology preventing whole-loop failures',
@@ -161,7 +161,17 @@ export const SERVICES: ServiceItem[] = [
       'Pharmaceutical Production Facilities',
       'Educational & Healthcare Campuses'
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1000&q=80'
+    imageUrl: '/images/cerberus-pro.jpg',
+    diagramUrl: '/images/fire-alarm-system-diagram.jpg',
+    diagramTitle: 'Fire Alarm System Architecture & Signal Distribution',
+    diagramExplanation: 'Illustrates the complete operational signal flow between Primary/Backup power supplies, Initiating Devices (optical smoke, heat, flame detectors, manual call points), Central Addressable Control Panel, and Notification Appliances (strobe horns, motorized bells, and firefighter telephone handsets).',
+    schematicDetails: [
+      { title: 'Primary & Backup Power Supply', desc: 'Dual-source 220V AC mains input backed by supervised 24V DC battery packs guaranteeing 24h standby + 30m continuous full-alarm state.' },
+      { title: 'Initiating Devices Network', desc: 'Loop-powered optical smoke detectors, rate-of-rise thermal sensors, multi-sensor heads, and manual call points with built-in isolators.' },
+      { title: 'Central Microprocessor Control', desc: 'Multi-loop addressable controller managing polling cycles, cause-and-effect matrix logic, and BACnet/Modbus BMS integration.' },
+      { title: 'Emergency Notification Appliances', desc: 'High-candela synchronized strobes, 90dB+ electronic horns, motorized bells, and firefighter telephone handsets.' }
+    ],
+    installationUrl: '/images/aspirating-fire-smoke-detection-systems.jpg'
   },
   {
     id: 'fire-suppression',
@@ -187,7 +197,17 @@ export const SERVICES: ServiceItem[] = [
       'Bank Vaults & Telecommunication Hubs',
       'Industrial HT/LT Substation Control Rooms'
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=1000&q=80'
+    imageUrl: '/images/fm200-fire-suppression.jpg',
+    diagramUrl: '/images/fm200-fire-suppression.jpg',
+    diagramTitle: 'FM-200 / Clean Agent Gas Total Flooding Schematic',
+    diagramExplanation: 'Engineering schematic showing agent storage cylinder bank with solenoid release actuator, coincidence cross-zoned smoke detection logic, manual pull station, abort switch, high-pressure piping manifold, and ceiling discharge nozzles.',
+    schematicDetails: [
+      { title: 'Agent Storage Cylinder & Valve', desc: 'Heavy-gauge seamless steel cylinder pressurized with dry nitrogen to 25/42 bar with differential pressure gauge.' },
+      { title: 'Electric Solenoid Actuator', desc: 'Fast-acting electromagnetic latch actuator triggered automatically upon confirmed 2-zone cross-detection.' },
+      { title: 'Coincidence Cross-Zoned Detection', desc: 'Prevents accidental discharge by requiring two distinct detector zones to confirm smoke verification before release countdown.' },
+      { title: 'Hold-Off Abort Switch & Manual Station', desc: 'Allows on-site personnel to halt gas discharge in case of false alarm, or trigger immediate manual discharge in an emergency.' }
+    ],
+    installationUrl: '/images/cerberus-pro.jpg'
   },
   {
     id: 'pumps',
@@ -213,7 +233,16 @@ export const SERVICES: ServiceItem[] = [
       'Airport Terminals & Seaports',
       'Luxury Hotels & Multi-Story Commercial Plazas'
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80'
+    imageUrl: '/images/fire-sprinkler-discharge.jpg',
+    diagramUrl: '/images/fire-sprinkler-discharge.jpg',
+    diagramTitle: 'Automatic Fire Sprinkler & High-Pressure Hydraulic Suppression',
+    diagramExplanation: 'Fast-response pendent sprinkler head activated by thermal expansion of quartzoid bulb, delivering immediate conical water curtain suppressing fire flashover while signaling the NFPA 20 fire pump controller.',
+    schematicDetails: [
+      { title: 'Thermal Quartzoid Bulb (68°C)', desc: 'Precision heat-sensitive liquid bulb breaks instantly at calibrated trigger temperature, releasing water seal plug.' },
+      { title: 'Conical Deflector Umbrella Spray', desc: 'Specially engineered deflector teeth atomize water into a dense cooling blanket starving convective thermal lift.' },
+      { title: 'Pressure Switch & Water Motor Gong', desc: 'Waterflow through alarm check valve trips pressure switches and mechanical water motor gong alarm.' },
+      { title: 'NFPA 20 Automated Booster Staging', desc: 'Jockey pump maintains static riser pressure; main electric/diesel fire pumps start automatically on line pressure drop.' }
+    ]
   },
   {
     id: 'panel-suppression',
@@ -239,7 +268,7 @@ export const SERVICES: ServiceItem[] = [
       'CNC Machine Cabinets & Telecom Racks',
       'Elevator Motor Control Centers'
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80'
+    imageUrl: '/images/aspirating-fire-smoke-detection-systems.jpg'
   },
   {
     id: 'lhd-cables',
@@ -317,7 +346,16 @@ export const SERVICES: ServiceItem[] = [
       'Multinational Corporate Head Offices',
       'Modern High-Rise Residential Condominiums'
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80'
+    imageUrl: '/images/bosch-public-address-system.jpg',
+    diagramUrl: '/images/bosch-public-address-system.jpg',
+    diagramTitle: 'Bosch EN 54 Voice Alarm & Paging Topology',
+    diagramExplanation: 'Bosch Plena & Paviro voice alarm architecture showing zone-controlled desktop paging call stations, redundant supervised rack amplifiers, and high-intelligibility ceiling/wall loudspeakers.',
+    schematicDetails: [
+      { title: 'Zone-Controlled Paging Call Station', desc: 'Ergonomic desktop gooseneck condenser microphone with illuminated zone selection keys and priority override.' },
+      { title: 'Supervised Multi-Channel Amplifiers', desc: 'High-efficiency Class-D modular amplifiers with pilot tone line surveillance and automatic backup amplifier switchover.' },
+      { title: 'EN 54-24 Certified Loudspeakers', desc: 'Metal grille ceiling speakers and sound projectors delivering high Speech Transmission Index (STI > 0.5) during evacuation.' },
+      { title: 'BMS & Fire Panel Interlock', desc: 'Direct dry-contact and Ethernet integration automatically muting commercial BGM and broadcasting phased evacuation alerts.' }
+    ]
   }
 ];
 
@@ -346,7 +384,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     ],
     badge: 'Enterprise Turnkey Project',
     stats: { label: 'Floor Area Protected', value: '450,000 sq ft' },
-    imageUrl: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=80'
+    imageUrl: '/images/aspirating-fire-smoke-detection-systems.jpg'
   },
   {
     id: 'renata-pharma-cleanroom',
@@ -371,7 +409,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     ],
     badge: 'Clean Agent Specialization',
     stats: { label: 'Cleanrooms Covered', value: '14 Specialized Labs' },
-    imageUrl: 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1000&q=80'
+    imageUrl: '/images/cerberus-pro.jpg'
   },
   {
     id: 'westin-dhaka-hospitality',
@@ -397,7 +435,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     ],
     badge: 'Hospitality Standard',
     stats: { label: 'Guest Rooms & Suites', value: '235 Rooms + Ballrooms' },
-    imageUrl: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=80'
+    imageUrl: '/images/bosch-public-address-system.jpg'
   },
   {
     id: 'bombay-sweets-processing',
@@ -423,7 +461,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     ],
     badge: 'Food Grade Protection',
     stats: { label: 'Enclosures Protected', value: '42 Electrical Panels' },
-    imageUrl: 'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1000&q=80'
+    imageUrl: '/images/fire-sprinkler-discharge.jpg'
   },
   {
     id: 'commercial-tower-nikunja',
@@ -449,7 +487,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     ],
     badge: 'Smart Building Automation',
     stats: { label: 'Building Scale', value: '18 Stories + 3 Basements' },
-    imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80'
+    imageUrl: '/images/aspirating-fire-smoke-detection-systems.jpg'
   },
   {
     id: 'tier3-datacenter-suppression',
@@ -475,7 +513,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     ],
     badge: 'Mission Critical 99.999%',
     stats: { label: 'Extinguishing Speed', value: '< 10 Seconds' },
-    imageUrl: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1000&q=80'
+    imageUrl: '/images/fm200-fire-suppression.jpg'
   }
 ];
 

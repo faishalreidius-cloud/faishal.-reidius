@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { ServicesSection } from './components/ServicesSection';
+import { SystemsArchitectureSection } from './components/SystemsArchitectureSection';
 import { ServiceDetailModal } from './components/ServiceDetailModal';
 import { PortfolioSection } from './components/PortfolioSection';
 import { ProjectDetailModal } from './components/ProjectDetailModal';
@@ -101,6 +102,9 @@ export default function App() {
           onSelectService={(service) => setSelectedService(service)}
           onInquireService={handleServiceInquiry}
         />
+
+        {/* Technical Architecture & Systems Showcase (User Photos & Schematics) */}
+        <SystemsArchitectureSection onInquireSystem={handleServiceInquiry} />
 
         {/* Professional Enterprise Portfolio */}
         <PortfolioSection

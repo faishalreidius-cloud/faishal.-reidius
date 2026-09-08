@@ -22,11 +22,11 @@ export const Navbar = ({ onOpenBrochure, onOpenPlanner, onNavigateToContact }: N
 
   const navLinks = [
     { label: 'Services', href: '#services' },
+    { label: 'Schematics', href: '#systems-architecture' },
     { label: 'Portfolio', href: '#portfolio' },
     { label: 'Why Choose Us', href: '#why-us' },
     { label: 'Partners', href: '#partners' },
     { label: 'Testimonials', href: '#testimonials' },
-    { label: 'FAQ', href: '#faq' },
     { label: 'Contact', href: '#contact' },
   ];
 

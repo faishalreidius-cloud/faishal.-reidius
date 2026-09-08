@@ -115,12 +115,18 @@ export const ServicesSection = ({ onSelectService, onInquireService }: ServicesS
                     {getServiceIcon(service.iconName)}
                   </div>
 
-                  {/* Certifications chip */}
+                  {/* Certifications & Schematic chip */}
                   <div className="absolute bottom-3 left-4 right-4 flex flex-wrap gap-1">
-                    {service.certifications.slice(0, 3).map((cert, idx) => (
+                    {service.diagramUrl && (
+                      <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-teal-950/90 text-teal-300 border border-teal-600 backdrop-blur-sm shadow-sm flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse" />
+                        Schematic Included
+                      </span>
+                    )}
+                    {service.certifications.slice(0, 2).map((cert, idx) => (
                       <span
                         key={idx}
-                        className="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-900/90 text-teal-300 border border-slate-700 backdrop-blur-sm"
+                        className="px-2 py-0.5 rounded text-[10px] font-bold bg-slate-900/90 text-slate-200 border border-slate-700 backdrop-blur-sm"
                       >
                         {cert}
                       </span>

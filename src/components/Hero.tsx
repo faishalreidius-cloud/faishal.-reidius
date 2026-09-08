@@ -100,8 +100,8 @@ export const Hero = ({
               {/* Image banner */}
               <div className="relative h-72 sm:h-80 rounded-xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1000&q=80"
-                  alt="Reidius Solution Fire Engineering"
+                  src="/images/cerberus-pro.jpg"
+                  alt="Siemens Cerberus PRO and Sinorix Fire Protection Systems"
                   className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
                   referrerPolicy="no-referrer"
                 />
@@ -110,16 +110,16 @@ export const Hero = ({
                 {/* Floating Badge */}
                 <div className="absolute top-4 right-4 bg-slate-900/90 backdrop-blur-md border border-slate-700 px-3 py-1.5 rounded-lg flex items-center gap-2 shadow-lg">
                   <Flame className="w-4 h-4 text-red-400 animate-pulse" />
-                  <span className="text-xs font-bold text-white tracking-wide">UL • FM • EN54</span>
+                  <span className="text-xs font-bold text-white tracking-wide">SIEMENS CERBERUS PRO • SINORIX</span>
                 </div>
 
                 {/* Bottom Overlay Info */}
                 <div className="absolute bottom-4 left-4 right-4 space-y-1">
                   <div className="text-xs text-teal-400 font-semibold tracking-wider uppercase">
-                    Trusted by Industry Giants
+                    Turnkey Engineering &amp; Official Supply
                   </div>
                   <div className="text-sm font-bold text-white">
-                    Ha-Meem Group • Renata Pharma • The Westin Dhaka • Bombay Sweets
+                    Intelligent Fire Detection, Total Flooding &amp; Voice Evacuation
                   </div>
                 </div>
               </div>

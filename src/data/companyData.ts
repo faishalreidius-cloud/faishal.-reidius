@@ -64,7 +64,7 @@ export const PARTNER_BRANDS: PartnerBrand[] = [
   {
     name: 'Siemens',
     role: 'Authorized Channel Partner',
-    specialty: 'Addressable Fire Systems & Sinorix Novec/FM200 Suppression',
+    specialty: 'Desigo CC Building Automation (BMS), Cerberus PRO Fire & Sinorix Suppression',
     origin: 'Germany',
     logoText: 'SIEMENS',
     accentColor: '#00646E'
@@ -324,38 +324,39 @@ export const SERVICES: ServiceItem[] = [
   },
   {
     id: 'pa-bms',
-    title: 'Public Address, Voice Evacuation & Building Automation',
-    shortDesc: 'Bosch Plena EN 54-16 certified voice alarm systems, ceiling loudspeakers, power amplifiers, and Building Management Systems (BMS).',
+    title: 'Building Automation (BMS/BAS), Public Address & Voice Evacuation',
+    shortDesc: 'Siemens Desigo CC Building Management Systems (BMS/BAS), modular PXC DDC automation stations, HVAC control, and Bosch Plena EN 54 voice alarm integration.',
     fullDesc:
-      'In emergencies, spoken voice instructions save lives far more effectively than blaring sirens alone. Reidius Solution supplies and integrates Bosch Communications Systems, including LHM 0606/xx ceiling loudspeakers, LBB1938/30 480W power amplifiers, and priority paging consoles. We connect these seamlessly with Building Management Systems (BMS) for centralized ventilation, damper control, and emergency lighting.',
+      'Reidius Solution engineers comprehensive Building Management Systems (BMS/BAS) powered by Siemens Desigo CC and modular Desigo PXC DDC automation stations. We integrate central chilled water plants, Air Handling Units (AHUs), variable air volume (VAV) dampers, fire smoke extraction fans, and lighting into unified graphical SCADA telemetry. Seamlessly unified with Bosch Communications EN 54 voice evacuation systems, our installations guarantee optimal occupant comfort, automated energy efficiency (up to 30% reduction), and instantaneous life safety coordination.',
     category: 'pa-bms',
-    iconName: 'Megaphone',
-    brands: ['Bosch', 'Plena Systems', 'BMS Automation'],
-    certifications: ['EN 54-16', 'EN 54-24', 'CE', 'IEC 268-5'],
+    iconName: 'Building2',
+    brands: ['Siemens Desigo CC', 'Desigo PXC', 'Bosch Public Address', 'BACnet/IP', 'KNX'],
+    certifications: ['BTL Certified B-AWS', 'EN ISO 16484-5', 'EN 54-16', 'EN 54-24', 'CE'],
     keyFeatures: [
-      'EN 54 certified clear voice evacuation for phased egress guidance',
-      'Supervised amplifier loops with automatic battery standby switchover',
-      'High-durability metal grille ceiling speakers (6W dual-cone with 100V tap)',
-      'Tabletop paging microphones with priority contact switching',
-      'Integrated BMS controllers monitoring HVAC, elevators, and water tanks',
-      'Multi-zone background music (BGM) during standard day-to-day operations'
+      'Siemens Desigo CC central SCADA workstation with live graphical AHU & chiller plant telemetry',
+      'Modular Desigo PXC programmable DDC automation stations with TX-I/O plug-in field cards',
+      'Motorized rotary damper actuators for VAV boxes, ventilation, and emergency smoke dampers',
+      'Intelligent room automation with KNX multi-scene switches, digital thermostats, and CO2 sensors',
+      'Full protocol interoperability supporting BACnet/IP, BACnet MS/TP, Modbus RTU/TCP, and KNX',
+      'Bosch EN 54-16 voice evacuation interlock broadcasting prioritized phased emergency messages'
     ],
     applications: [
-      'Five-Star Hotels & Convention Halls',
-      'Shopping Malls & Department Stores',
-      'Multinational Corporate Head Offices',
-      'Modern High-Rise Residential Condominiums'
+      'Corporate High-Rise Towers & Commercial Plazas',
+      'Pharmaceutical Cleanroom HVAC & Pressure Cascade Control',
+      'Luxury 5-Star Hotels & International Convention Centers',
+      'Data Centers & Industrial Manufacturing Facilities'
     ],
-    imageUrl: '/images/bosch-public-address-system.jpg',
-    diagramUrl: '/images/bosch-public-address-system.jpg',
-    diagramTitle: 'Bosch EN 54 Voice Alarm & Paging Topology',
-    diagramExplanation: 'Bosch Plena & Paviro voice alarm architecture showing zone-controlled desktop paging call stations, redundant supervised rack amplifiers, and high-intelligibility ceiling/wall loudspeakers.',
+    imageUrl: '/images/siemens-desigo-bms.jpg',
+    diagramUrl: '/images/siemens-desigo-bms.jpg',
+    diagramTitle: 'Siemens Desigo CC Building Automation & DDC Topology',
+    diagramExplanation: 'Comprehensive Siemens Desigo CC building automation infrastructure connecting central management workstations, touch operator units, modular DDC controllers (PXC), TX-I/O field cards, rotary damper actuators, and KNX intelligent room climate sensors over BACnet/IP.',
     schematicDetails: [
-      { title: 'Zone-Controlled Paging Call Station', desc: 'Ergonomic desktop gooseneck condenser microphone with illuminated zone selection keys and priority override.' },
-      { title: 'Supervised Multi-Channel Amplifiers', desc: 'High-efficiency Class-D modular amplifiers with pilot tone line surveillance and automatic backup amplifier switchover.' },
-      { title: 'EN 54-24 Certified Loudspeakers', desc: 'Metal grille ceiling speakers and sound projectors delivering high Speech Transmission Index (STI > 0.5) during evacuation.' },
-      { title: 'BMS & Fire Panel Interlock', desc: 'Direct dry-contact and Ethernet integration automatically muting commercial BGM and broadcasting phased evacuation alerts.' }
-    ]
+      { title: 'Desigo CC Supervisory Station', desc: 'Central monitoring terminal running Desigo System Manager with live AHU plant flow schematics, temperature curves, and alarm logging.' },
+      { title: 'Modular Desigo PXC & TX-I/O', desc: 'BACnet/IP programmable DDC automation stations with modular plug-in I/O terminals for sensor inputs and analog actuator outputs.' },
+      { title: 'OpenAir Damper Actuators', desc: 'Precision electronic rotary actuators for accurate air volume damper positioning and emergency smoke isolation.' },
+      { title: 'KNX Room Units & Thermostats', desc: 'Digital LCD room climate controllers and multi-button wall switches managing temperature, lighting, and motorized blinds.' }
+    ],
+    installationUrl: '/images/bosch-public-address-system.jpg'
   }
 ];
 
@@ -487,7 +488,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     ],
     badge: 'Smart Building Automation',
     stats: { label: 'Building Scale', value: '18 Stories + 3 Basements' },
-    imageUrl: '/images/aspirating-fire-smoke-detection-systems.jpg'
+    imageUrl: '/images/siemens-desigo-bms.jpg'
   },
   {
     id: 'tier3-datacenter-suppression',

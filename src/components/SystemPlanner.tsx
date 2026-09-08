@@ -65,9 +65,9 @@ export const SystemPlanner = ({ isOpen, onClose, onApplyToInquiry }: SystemPlann
     },
     {
       id: 'pa-va',
-      name: 'Bosch Voice Alarm & Building Management System (BMS)',
-      desc: 'EN 54-16 certified phased voice evacuation, ceiling loudspeakers & graphic monitoring.',
-      standard: 'EN 54-16 / ISO 9001'
+      name: 'Siemens Desigo CC Building Automation (BMS) & Bosch Voice Alarm',
+      desc: 'Supervisory SCADA, modular PXC DDC controllers, HVAC integration & EN 54-16 phased voice evacuation.',
+      standard: 'BTL Certified / EN 54-16 / ISO 16484'
     }
   ];
 

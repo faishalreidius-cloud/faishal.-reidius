@@ -7,6 +7,7 @@ import {
   Radio,
   Fingerprint,
   Megaphone,
+  Building2,
   ArrowRight,
   CheckCircle2,
   ExternalLink
@@ -53,6 +54,8 @@ export const ServicesSection = ({ onSelectService, onInquireService }: ServicesS
         return <Fingerprint className="w-5 h-5 text-indigo-600" />;
       case 'Megaphone':
         return <Megaphone className="w-5 h-5 text-rose-600" />;
+      case 'Building2':
+        return <Building2 className="w-5 h-5 text-teal-600" />;
       default:
         return <Flame className="w-5 h-5 text-teal-600" />;
     }

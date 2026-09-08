@@ -10,7 +10,8 @@ import {
   Droplets,
   ExternalLink,
   ChevronRight,
-  Info
+  Info,
+  Building2
 } from 'lucide-react';
 
 interface SystemDiagramItem {
@@ -115,6 +116,49 @@ const SYSTEM_SHOWCASE_ITEMS: SystemDiagramItem[] = [
       { label: 'Discharge Time', value: '< 10 Seconds Total' },
       { label: 'Cylinder Pressure', value: '25 Bar / 42 Bar High Pressure' },
       { label: 'False Alarm Immunity', value: 'Patented ASAtechnology™' }
+    ]
+  },
+  {
+    id: 'siemens-desigo-bms',
+    title: 'Siemens Desigo CC Building Automation & Management (BMS/BAS)',
+    subtitle: 'Central SCADA Workstation, Modular PXC Automation Stations & KNX Room Units',
+    category: 'Building Automation',
+    imageUrl: '/images/siemens-desigo-bms.jpg',
+    icon: <Building2 className="w-5 h-5 text-teal-400" />,
+    standards: ['BACnet/IP', 'BTL Certified', 'EN ISO 16484-5', 'KNX'],
+    summary:
+      'The comprehensive Siemens Desigo CC Building Automation and Control suite unifying primary plant SCADA management, graphical HVAC Air Handling Unit (AHU) telemetry, modular PXC direct digital controllers, TX-I/O field cards, rotary damper actuators, and smart KNX room climate controls.',
+    callouts: [
+      {
+        title: 'Desigo CC System Manager Workstation',
+        category: 'Supervisory SCADA',
+        description:
+          'High-performance desktop console with dynamic animated AHU flow diagrams, heating/cooling performance curves, centralized alarm prioritization, and automated energy profiling.'
+      },
+      {
+        title: 'Desigo Touch Room Operator Terminal',
+        category: 'Field HMI & Navigation',
+        description:
+          'Interactive color touchscreen displaying floor-by-floor isometric layouts, conference room scheduling, air quality indices, and rapid override parameters.'
+      },
+      {
+        title: 'Modular Desigo PXC DDC Automation Stations',
+        category: 'Direct Digital Control',
+        description:
+          'DIN-rail mounted programmable controllers with high-density TX-I/O plug-in terminal blocks, supporting BACnet/IP, MS/TP, LON, and Modbus networks.'
+      },
+      {
+        title: 'OpenAir Damper Actuators & Smart Room Sensors',
+        category: 'Field Actuation & Sensors',
+        description:
+          'Fast-acting motorized rotary damper actuators for VAV and smoke dampers, paired with digital RDG thermostats, CO2 sensors, and multi-gang KNX scene switches.'
+      }
+    ],
+    specSheetHighlights: [
+      { label: 'Protocols', value: 'BACnet/IP, MS/TP, KNX, Modbus' },
+      { label: 'System Capacity', value: '100,000+ Addressable Points' },
+      { label: 'Energy Optimization', value: 'Up to 30% HVAC Savings' },
+      { label: 'BTL Profile', value: 'B-AWS Advanced Workstation' }
     ]
   },
   {

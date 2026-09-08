@@ -63,4 +63,5 @@ export interface PartnerBrand {
   origin: string;
   logoText: string;
   accentColor: string;
+  logoUrl?: string;
 }

@@ -158,6 +158,29 @@ export const Footer = ({ onOpenBrochure, onOpenPlanner }: FooterProps) => {
           </div>
         </div>
 
+        {/* Global Partner Logos Strip in Footer */}
+        <div className="py-6 border-b border-slate-900/80 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="text-xs font-bold uppercase tracking-wider text-slate-400">
+            Authorized OEM &amp; Channel Alliances:
+          </div>
+          <div className="flex flex-wrap items-center gap-3">
+            {PARTNER_BRANDS.filter(b => b.logoUrl).map((brand, idx) => (
+              <div
+                key={idx}
+                className="h-8 px-2.5 py-1 bg-white rounded flex items-center justify-center shadow-sm opacity-85 hover:opacity-100 transition-opacity"
+                title={`${brand.name} - ${brand.role}`}
+              >
+                <img
+                  src={brand.logoUrl}
+                  alt={`${brand.name} Logo`}
+                  className="max-h-5 max-w-[75px] w-auto object-contain"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>

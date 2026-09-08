@@ -1,5 +1,5 @@
 import { ShieldCheck, Flame, Award, ArrowRight, FileCheck, PhoneCall, CheckCircle2 } from 'lucide-react';
-import { COMPANY_INFO } from '../data/companyData';
+import { COMPANY_INFO, PARTNER_BRANDS } from '../data/companyData';
 
 interface HeroProps {
   onExploreServices: () => void;
@@ -157,36 +157,29 @@ export const Hero = ({
         {/* Strategic Brand Strip below hero */}
         <div className="mt-16 pt-10 border-t border-slate-800/80">
           <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 text-center mb-6">
-            Authorized Channel Partnerships &amp; Certified Technologies
+            Authorized Channel Partnerships &amp; Certified Engineering Technologies
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-slate-400">
-            <span className="font-extrabold text-lg tracking-widest text-slate-300 hover:text-white transition-colors">
-              SIEMENS
-            </span>
-            <span className="text-slate-600">•</span>
-            <span className="font-bold text-lg tracking-wide text-slate-300 hover:text-white transition-colors">
-              Simplex
-            </span>
-            <span className="text-slate-600">•</span>
-            <span className="font-black text-lg tracking-wider text-slate-300 hover:text-white transition-colors">
-              BOSCH
-            </span>
-            <span className="text-slate-600">•</span>
-            <span className="font-extrabold text-lg tracking-tight text-slate-300 hover:text-white transition-colors">
-              MAS DAF
-            </span>
-            <span className="text-slate-600">•</span>
-            <span className="font-bold text-lg tracking-widest text-slate-300 hover:text-white transition-colors">
-              VIRDI
-            </span>
-            <span className="text-slate-600">•</span>
-            <span className="font-bold text-lg tracking-wider text-slate-300 hover:text-white transition-colors">
-              FIPRON
-            </span>
-            <span className="text-slate-600">•</span>
-            <span className="font-semibold text-lg tracking-normal text-slate-300 hover:text-white transition-colors">
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+            {PARTNER_BRANDS.filter(b => b.logoUrl).map((brand, idx) => (
+              <div
+                key={idx}
+                className="h-11 px-3.5 py-1.5 flex items-center justify-center bg-white rounded-lg border border-slate-700/60 shadow-md hover:border-teal-400 transition-all hover:scale-105 duration-200"
+                title={`${brand.name} - ${brand.role}`}
+              >
+                <img
+                  src={brand.logoUrl}
+                  alt={`${brand.name} Logo`}
+                  className="max-h-7 max-w-[100px] w-auto object-contain"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+            <div className="h-11 px-3 py-1.5 flex items-center justify-center bg-slate-800/80 rounded-lg border border-slate-700 text-xs font-bold text-slate-300">
+              ZETTLER
+            </div>
+            <div className="h-11 px-3 py-1.5 flex items-center justify-center bg-slate-800/80 rounded-lg border border-slate-700 text-xs font-bold text-slate-300">
               AP SENSING
-            </span>
+            </div>
           </div>
         </div>
       </div>

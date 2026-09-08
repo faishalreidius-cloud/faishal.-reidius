@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <!-- Bosch Magneto Armature Emblem -->
+  <g transform="translate(10, 8)">
+    <circle cx="32" cy="32" r="30" stroke="#88929A" stroke-width="4.5" fill="none" />
+    <path d="M 23 14 H 41 M 23 50 H 41 M 32 14 V 50 M 23 23 H 41 V 41 H 23 Z" stroke="#88929A" stroke-width="4" stroke-linejoin="round" fill="none" />
+  </g>
+  <!-- BOSCH Bold Red Typography -->
+  <g fill="#E20015">
+    <text x="88" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="52" font-weight="900" letter-spacing="-0.5px">BOSCH</text>
+  </g>
+</svg>

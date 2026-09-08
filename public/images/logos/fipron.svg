@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 90" fill="none">
+  <!-- Red FIPR -->
+  <text x="10" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Arial Black', sans-serif" font-size="64" font-weight="900" fill="#E30613" letter-spacing="-1px">FIPR</text>
+
+  <!-- Blue Geodesic Sphere for O -->
+  <g transform="translate(198, 14)">
+    <circle cx="31" cy="31" r="30" fill="#005BAA" />
+    <!-- Geodesic polygon lattice mesh -->
+    <path d="M31 1 L31 61 M1 31 L61 31" stroke="#FFFFFF" stroke-width="1.4" opacity="0.9" />
+    <path d="M12 12 L50 50 M12 50 L50 12" stroke="#FFFFFF" stroke-width="1.4" opacity="0.9" />
+    <circle cx="31" cy="31" r="20" stroke="#FFFFFF" stroke-width="1.4" fill="none" opacity="0.9" />
+    <circle cx="31" cy="31" r="10" stroke="#FFFFFF" stroke-width="1.4" fill="none" opacity="0.9" />
+    <!-- Triangular facets -->
+    <path d="M31 1 L48 14 L48 48 L31 61 L14 48 L14 14 Z" stroke="#FFFFFF" stroke-width="1.2" fill="none" opacity="0.95" />
+    <path d="M31 11 L43 20 L43 42 L31 51 L19 42 L19 20 Z" stroke="#FFFFFF" stroke-width="1.2" fill="none" opacity="0.95" />
+    <circle cx="31" cy="31" r="3" fill="#FFFFFF" />
+  </g>
+
+  <!-- Red N -->
+  <text x="272" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Arial Black', sans-serif" font-size="64" font-weight="900" fill="#E30613" letter-spacing="-1px">N</text>
+</svg>

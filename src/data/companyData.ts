@@ -67,7 +67,8 @@ export const PARTNER_BRANDS: PartnerBrand[] = [
     specialty: 'Desigo CC Building Automation (BMS), Cerberus PRO Fire & Sinorix Suppression',
     origin: 'Germany',
     logoText: 'SIEMENS',
-    accentColor: '#00646E'
+    accentColor: '#00646E',
+    logoUrl: '/images/logos/siemens.svg'
   },
   {
     name: 'Simplex',
@@ -75,7 +76,8 @@ export const PARTNER_BRANDS: PartnerBrand[] = [
     specialty: 'Advanced Networked Life Safety & Touchscreen Control Units',
     origin: 'Johnson Controls',
     logoText: 'Simplex',
-    accentColor: '#D9232E'
+    accentColor: '#D9232E',
+    logoUrl: '/images/logos/simplex.svg'
   },
   {
     name: 'Bosch',
@@ -83,7 +85,8 @@ export const PARTNER_BRANDS: PartnerBrand[] = [
     specialty: 'Public Address, Plena Amplifiers & EN 54 Voice Alarm Systems',
     origin: 'Germany',
     logoText: 'BOSCH',
-    accentColor: '#C8102E'
+    accentColor: '#C8102E',
+    logoUrl: '/images/logos/bosch.svg'
   },
   {
     name: 'MAS DAF',
@@ -91,7 +94,35 @@ export const PARTNER_BRANDS: PartnerBrand[] = [
     specialty: 'UL Listed & NFPA 20 Certified Fire Pumps and Control Units',
     origin: 'Europe / Turkey',
     logoText: 'MAS DAF',
-    accentColor: '#1E3A8A'
+    accentColor: '#1E3A8A',
+    logoUrl: '/images/logos/mas-daf.svg'
+  },
+  {
+    name: 'Ebara',
+    role: 'Global Pump Engineering Partner',
+    specialty: 'UL/FM Certified Centrifugal Fire Pumps, End-Suction & Split-Case Packages',
+    origin: 'Japan',
+    logoText: 'EBARA',
+    accentColor: '#004C97',
+    logoUrl: '/images/logos/ebara.svg'
+  },
+  {
+    name: 'Virdi',
+    role: 'Biometric Technology Partner',
+    specialty: 'Patented Fake Finger Detection & Face Recognition Terminals',
+    origin: 'South Korea',
+    logoText: 'VIRDI',
+    accentColor: '#2563EB',
+    logoUrl: '/images/logos/virdi.svg'
+  },
+  {
+    name: 'Fipron',
+    role: 'Micro-Suppression Partner',
+    specialty: 'Fipron Cord & Sticker Micro-encapsulated Panel Fire Extinguishers',
+    origin: 'Europe',
+    logoText: 'FIPRON',
+    accentColor: '#DC2626',
+    logoUrl: '/images/logos/fipron.svg'
   },
   {
     name: 'Zettler',
@@ -100,22 +131,6 @@ export const PARTNER_BRANDS: PartnerBrand[] = [
     origin: 'Johnson Controls',
     logoText: 'ZETTLER',
     accentColor: '#0F172A'
-  },
-  {
-    name: 'Virdi',
-    role: 'Biometric Technology Partner',
-    specialty: 'Patented Fake Finger Detection & Face Recognition Terminals',
-    origin: 'South Korea',
-    logoText: 'VIRDI',
-    accentColor: '#2563EB'
-  },
-  {
-    name: 'Fipron',
-    role: 'Micro-Suppression Partner',
-    specialty: 'Fipron Cord & Sticker Micro-encapsulated Panel Fire Extinguishers',
-    origin: 'Europe',
-    logoText: 'FIPRON',
-    accentColor: '#DC2626'
   },
   {
     name: 'AP Sensing / Bandweaver',
@@ -212,13 +227,13 @@ export const SERVICES: ServiceItem[] = [
   {
     id: 'pumps',
     title: 'NFPA 20 & UL 448 Fire Pumps & Automated Controllers',
-    shortDesc: 'MAS DAF industrial fire pump units, electric motor drives, FM-certified diesel engines, and integrated jockey pump controllers.',
+    shortDesc: 'MAS DAF & EBARA industrial fire pump packages, electric motor drives, FM-certified diesel engines, and automated jockey pump controllers.',
     fullDesc:
-      'Robust water supply is the backbone of any reliable fire protection system. Reidius Solution supplies and commissions MAS DAF YP Series fire pump packages compliant with NFPA 20 and UL 448 standards. Available in End-Suction, Horizontal Split-Case, and In-Line configurations with automatic Star-Delta or Direct-Starting controllers, pressure recorders, and weekly test timers.',
+      'Robust water supply is the backbone of any reliable fire protection system. Reidius Solution supplies, installs, and commissions MAS DAF and EBARA fire pump packages compliant with NFPA 20, UL 448, and FM standards. Available in End-Suction, Horizontal Split-Case, and Vertical Multi-Stage configurations with automatic Star-Delta or Direct-Starting controllers, flow testing loops, pressure recorders, and weekly exercise timers.',
     category: 'pumps',
     iconName: 'Activity',
-    brands: ['MAS DAF', 'TÜV CERT', 'Europump', 'NFPA'],
-    certifications: ['UL Listed', 'NFPA 20', 'UL 448', 'ISO 9001'],
+    brands: ['MAS DAF', 'EBARA', 'TÜV CERT', 'Europump', 'NFPA'],
+    certifications: ['UL Listed', 'FM Approved', 'NFPA 20', 'UL 448', 'ISO 9001'],
     keyFeatures: [
       'Capacity ranges up to 2500 GPM with head pressures over 200 PSI',
       'Electric Motor Drive and FM-Certified Diesel Engines with heat exchangers',

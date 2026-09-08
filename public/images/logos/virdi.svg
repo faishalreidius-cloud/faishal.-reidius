@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" fill="none">
+  <!-- ViRDI Stylized Typography -->
+  <g transform="skewX(-15) translate(40, 15)">
+    <!-- Cyan Square above i -->
+    <rect x="76" y="10" width="22" height="18" fill="#00A0DC" />
+    
+    <!-- VIRDI Letterforms in Heavy Black -->
+    <!-- V -->
+    <path d="M 10 12 L 32 72 L 50 72 L 68 12 L 48 12 L 41 50 L 30 12 Z" fill="#0A0A0A" />
+    
+    <!-- i stem -->
+    <path d="M 77 34 L 77 72 L 97 72 L 97 34 Z" fill="#0A0A0A" />
+    
+    <!-- R -->
+    <path d="M 108 12 L 108 72 L 128 72 L 128 50 L 140 50 L 154 72 L 176 72 L 158 46 C 168 42 173 34 173 26 C 173 17 165 12 150 12 Z M 128 26 L 146 26 C 151 26 154 28 154 34 C 154 40 151 41 146 41 L 128 41 Z" fill="#0A0A0A" />
+    
+    <!-- D -->
+    <path d="M 186 12 L 186 72 L 214 72 C 235 72 248 59 248 42 C 248 25 235 12 214 12 Z M 206 28 L 214 28 C 224 28 228 34 228 42 C 228 50 224 56 214 56 L 206 56 Z" fill="#0A0A0A" />
+    
+    <!-- I -->
+    <path d="M 260 12 L 260 72 L 280 72 L 280 12 Z" fill="#0A0A0A" />
+  </g>
+</svg>

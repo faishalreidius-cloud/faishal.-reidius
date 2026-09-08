@@ -1,0 +1,6 @@
+{
+  "name": "Reidius Solution",
+  "description": "Corporate website and engineering portfolio for Reidius Solution - Authorized Provider of Intelligent Fire Detection, Gas Suppression, Fire Pumps, Access Control, and Building Management Systems.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
